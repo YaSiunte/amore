@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <main class="login-shell">
+    <section class="login-panel" aria-labelledby="login-title">
+      <div class="brand-mark" aria-hidden="true">?</div>
+      <h1 id="login-title">Login</h1>
+      <p class="subtitle">Digite seu nome e tente descobrir a senha.</p>
+
+      <form id="loginForm" class="login-form">
+        <label for="nameInput">Nome</label>
+        <input id="nameInput" name="name" type="text" autocomplete="name" placeholder="Seu nome" required>
+
+        <label for="passwordInput">Senha</label>
+        <input id="passwordInput" name="password" type="password" autocomplete="off" placeholder="Tente acertar" required>
+
+        <button type="submit">Entrar</button>
+      </form>
+
+      <p id="hintMessage" class="hint" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <div id="jumpScare" class="jump-scare" aria-hidden="true">
+    <img src="pisca.jpg" alt="">
+  </div>
+ 
+</body>
+</html>
