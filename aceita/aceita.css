@@ -1,0 +1,135 @@
+:root {
+  color-scheme: dark;
+  --bg: #9f1436;
+  --panel: #fff7f2;
+  --ink: #301418;
+  --muted: #8a5960;
+  --accent: #d8234f;
+  --accent-dark: #9f1436;
+  --cream: #f4dfcd;
+  --line: rgba(118, 43, 57, 0.18);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  overflow: hidden;
+}
+
+#conteudo {
+  width: min(100% - 48px, 420px);
+  min-height: 330px;
+  background: var(--panel);
+  border: 1px solid rgba(255, 255, 255, 0.64);
+  border-radius: 8px;
+  box-shadow: 0 24px 70px rgba(82, 20, 34, 0.28);
+  padding: 32px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+#conteudo::before {
+  content: "";
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  right: -58px;
+  top: -62px;
+  background: var(--rose);
+  border-radius: 50%;
+  opacity: 0.58;
+}
+
+#conteudo::after {
+  position: absolute;
+  right: 24px;
+  top: 19px;
+  color: rgba(216, 35, 79, 0.28);
+  font-size: 2.7rem;
+  font-weight: 800;
+}
+
+h2 {
+  margin: 34px 0 34px;
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  line-height: 1.12;
+  position: relative;
+  z-index: 1;
+}
+
+#botoes {
+  min-height: 130px;
+  position: relative;
+  z-index: 1;
+}
+
+.btn {
+  min-width: 112px;
+  min-height: 46px;
+  border: 0;
+  border-radius: 6px;
+  padding: 0 22px;
+  background: var(--accent);
+  color: white;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 12px 20px rgba(216, 35, 79, 0.22);
+}
+
+.btn:hover {
+  background: var(--accent-dark);
+}
+
+.btn:first-child {
+  margin-right: 14px;
+}
+
+.btn:last-child {
+  background: var(--accent);
+  color: white;
+}
+
+.btn:last-child:hover {
+  background: var(--accent-dark);
+}
+
+@media (max-width: 520px) {
+  #conteudo {
+    width: calc(100vw - 48px);
+    min-height: 360px;
+    padding: 24px;
+  }
+
+  h2 {
+    margin-top: 42px;
+    font-size: 1.7rem;
+  }
+
+  .btn {
+    min-width: 100px;
+    padding: 0 16px;
+  }
+
+  .btn:first-child {
+    margin-right: 8px;
+  }
+}
