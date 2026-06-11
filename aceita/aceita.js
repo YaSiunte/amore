@@ -1,6 +1,12 @@
-
 function sim() {
-    alert("voce aceitou namorar cmg")
+  document.body.classList.add("carregando");
+
+  document.getElementById("pergunta").innerText = "iupiiiiiiiiiiiiiiii";
+  document.getElementById("botoes").style.display = "none";
+
+  setTimeout(function() {
+    alert("voce aceitou namorar cmg");
+  }, 4000);
 }
 
 function desvia(t) {

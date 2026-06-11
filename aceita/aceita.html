@@ -12,11 +12,19 @@
 <body>
 
     <div id="conteudo">
-        <h2>Aceita continuar namorando comigo?</h2>
+        <h2 id="pergunta">Aceita continuar namorando comigo?</h2>
 
         <div id="botoes">
             <button class="btn" onclick="sim()">Sim</button>
             <button class="btn" onclick="desvia(this)" onmouseover="desvia(this)">Não</button>
+        </div>
+
+        <div id="carregamento">
+            <div id="barra"></div>
+        </div>
+
+        <div id="mensagemFinal">
+            <p>♡</p>
         </div>
     </div>
 
