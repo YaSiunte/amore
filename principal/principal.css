@@ -141,3 +141,53 @@ body {
   font-size: 38px;
   font-family: Georgia, "Times New Roman", serif;
 }
+
+#carmela {
+  min-height: 90vh;
+  background-color: rgb(140, 24, 44);
+  color: #ffe6ea;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 10px 40px;
+  position: relative;
+  overflow: visible;
+}
+
+.texto-carmela h2 {
+  margin: 0;
+  color: #ffe3e8;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 95px;
+  line-height: 0.9;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.texto-carmela p {
+  margin: 36px 0 0;
+  color: #ffe3e8;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2rem;
+  text-align: left;
+}
+
+.insta-carmela {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 30px;
+  position: relative;
+}
+
+.insta-carmela > img:first-child {
+  width: min(48vw, 650px);
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  border: 5px solid #ffe6ea;
+}
+
+
