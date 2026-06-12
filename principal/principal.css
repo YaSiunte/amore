@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+}
+
+#inicio {
+    min-height: 90vh;
+    background-color: rgb(140, 24, 44);
+    color: #ffe6ea;
+    display: flex;
+    align-items: center;
+    padding: 10px 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+#inicio::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #8f0013;
+    opacity: 0.35;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.conteudo-inicio {
+    position: relative;
+    z-index: 2;
+}
+
+#inicio h1 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(4rem, 12vw, 9rem);
+    line-height: 0.9;
+    font-weight: 700;
+    letter-spacing: 0;
+    color: #ffe3e8;
+    text-transform: uppercase;
+}
+
+#inicio img {
+    width: 900px;
+    height: 700px;
+    object-fit: contain;
+    position: relative;
+    left: -180px;
+    z-index: 0;
+}

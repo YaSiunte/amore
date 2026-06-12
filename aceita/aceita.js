@@ -5,7 +5,7 @@ function sim() {
   document.getElementById("botoes").style.display = "none";
 
   setTimeout(function() {
-    alert("voce aceitou namorar cmg");
+    window.location.href = "../principal/principal.html";
   }, 4000);
 }
 
