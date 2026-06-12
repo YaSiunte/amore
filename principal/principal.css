@@ -47,3 +47,97 @@ body {
     left: -180px;
     z-index: 0;
 }
+
+#show {
+  min-height: 90vh;
+  background-color: rgb(140, 24, 44);
+  color: #ffe6ea;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 10px 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.imagem-show {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 60px;
+}
+
+.imagem-show img {
+  width: min(48vw, 650px);
+  height: auto;
+  object-fit: contain;
+}
+
+.texto-show {
+  width: 620px;
+  margin-left: auto;
+  margin-right: 80px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  margin-top: 170px;
+}
+
+.trecho-musica {
+  position: absolute;
+  top: -230px;
+  left: 0;
+  right: 0;
+  margin: 0;
+  color: #ffe3e8;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2rem;
+  font-style: italic;
+  text-align: center;
+  z-index: 5;
+}
+
+.texto-show h2 {
+  margin: 0;
+  color: #ffe3e8;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 95px;
+  line-height: 0.9;
+  font-weight: 700;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.texto-show p {
+  margin: 36px 0 0;
+  color: #ffe3e8;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2rem;
+  text-align: right;
+}
+
+.seta-musica {
+  position: absolute;
+  left: 600px;
+  top: 100px;
+  width: 360px;
+  height: 130px;
+  z-index: 4;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.seta-musica .linha-seta,
+.seta-musica {
+  fill: none;
+  stroke: #ffe3e8;
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+.seta-musica text {
+  fill: #ffe3e8;
+  font-size: 38px;
+  font-family: Georgia, "Times New Roman", serif;
+}
