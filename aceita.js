@@ -5,7 +5,7 @@ function sim() {
   document.getElementById("botoes").style.display = "none";
 
   setTimeout(function() {
-    window.location.href = "../principal/principal.html";
+    window.location.href = "principal.html";
   }, 4000);
 }
 

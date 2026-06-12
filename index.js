@@ -16,7 +16,7 @@ form.addEventListener("submit", (event) => {
     const attemptedPassword = passwordInput.value;
 
     if (attemptedPassword === senhaCorreta) {
-    window.location.href = "../aceita/aceita.html";
+    window.location.href = "aceita.html";
     return;
     }
 
