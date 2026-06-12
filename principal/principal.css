@@ -190,4 +190,95 @@ body {
   border: 5px solid #ffe6ea;
 }
 
+#kiss {
+  min-height: 90vh;
+  background-color: rgb(140, 24, 44);
+  color: #ffe6ea;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 10px 40px;
+  position: relative;
+  overflow: hidden;
+}
 
+.imagem-cabine {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: -80px;
+}
+
+.imagem-cabine img {
+  width: 800px;
+  max-width: none;
+  height: auto;
+  object-fit: contain;
+}
+
+.texto-kiss {
+  width: 620px;
+  margin-left: auto;
+  margin-right: 80px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  top: -200px;
+}
+
+.texto-kiss h2 {
+  margin: 0;
+  color: #ffe3e8;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 95px;
+  line-height: 0.9;
+  font-weight: 700;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.texto-kiss p {
+  margin: 36px 0 0;
+  color: #ffe3e8;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2rem;
+  text-align: right;
+}
+
+.seta-kiss {
+  position: absolute;
+  left: 450px;
+  top: 100px;
+  width: 360px;
+  height: 130px;
+  z-index: 4;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.seta-kiss .linha-seta-kiss,
+.seta-kiss {
+  fill: none;
+  stroke: #ffe3e8;
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+.seta-kiss text {
+  fill: #ffe3e8;
+  font-size: 38px;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.texto-kiss img.coracoes {
+  width: 500px !important;
+  max-width: 380px !important;
+  height: auto !important;
+  object-fit: contain !important;
+  position: absolute;
+  right: 100px;
+  top: 350px;
+  transform: scale(1.5);
+  transform-origin: center;
+}
