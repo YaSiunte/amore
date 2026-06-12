@@ -282,3 +282,55 @@ body {
   transform: scale(1.5);
   transform-origin: center;
 }
+
+#pedido {
+  min-height: 90vh;
+  background-color: rgb(140, 24, 44);
+  color: #ffe6ea;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 10px 40px;
+  position: relative;
+  overflow: visible;
+}
+
+.texto-pedido {
+  position: relative;
+  left: 80px;
+}
+
+.texto-pedido h2 {
+  margin: 0;
+  color: #ffe3e8;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 95px;
+  line-height: 0.9;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.texto-pedido p {
+  margin: 36px 0 0;
+  color: #ffe3e8;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2rem;
+  text-align: left;
+}
+
+.alianca {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 30px;
+  position: relative;
+}
+
+.alianca img {
+  width: 500px;
+  position: relative;
+  left: -120px;
+  transform: rotate(-356deg);
+}
